@@ -1,0 +1,16 @@
+<%- include('./partials/start.ejs')%>
+
+
+<h1 class="text-center">Send Data</h1>
+<div class="container">
+    <form action="/user" method="POST">
+        <input type="text" name="firstName" class="form-control mt-4" placeholder="First Name">
+        <input type="text" name="lastName" class="form-control mt-4" placeholder="Last Name">
+        <input type="email" name="email" class="form-control mt-4" placeholder="Email">
+        <input type="text" name="phone" class="form-control mt-4" placeholder="Phone">
+        <button type="submit" class="btn btn-primary mt-5">Send Data</button>
+    </form>
+</div>
+
+
+<%- include('./partials/end.ejs')%>

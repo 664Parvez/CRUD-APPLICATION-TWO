@@ -1,0 +1,16 @@
+<%- include('./partials/start.ejs')%>
+
+
+<h1 class="text-center">Update Data</h1>
+<div class="container">
+    <form action="/update/<%= data._id%>" method="POST">
+        <input type="text" name="firstName" class="form-control mt-4" placeholder="First Name" value="<%= data.firstName%>">
+        <input type="text" name="lastName" class="form-control mt-4" placeholder="Last Name" value="<%= data.lastName%>">
+        <input type="email" name="email" class="form-control mt-4" placeholder="Email" value="<%= data.email%>">
+        <input type="tel" name="phone" class="form-control mt-4" placeholder="Phone" value="<%= data.phone%>">
+        <button type="submit" class="btn btn-primary mt-5">Update Data</button>
+    </form>
+</div>
+
+
+<%- include('./partials/end.ejs')%>
